@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Sketchpad from 'sketchpad/lib/sketchpad';
 
@@ -50,8 +49,7 @@ class App extends Component {
         return (
             <div className="App">
                 <header className="App-header">
-                    <img src={logo} className="App-logo" alt="logo" />
-                    <h1 className="App-title">Welcome to React</h1>
+                    <h1 className="App-title">Sketchbook</h1>
                 </header>
                 <div className="color-palette">
                     { colorSwatches }
@@ -64,11 +62,8 @@ class App extends Component {
                     <button onClick={() => {this.sketchpad.redo()}}>redo</button>
                     <button onClick={this.handlePenSizeClick}>Size {penSize}</button>
                 </div>
-                <p className="App-intro">
-                    To get started, edit <code>src/App.js</code> and save to reload.
-                </p>
             </div>
-            );
+        );
     }
 }
 
