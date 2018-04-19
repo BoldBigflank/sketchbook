@@ -6,9 +6,14 @@ class App extends Component {
     state = {
         penSize:10,
         colors: [
-        "#FF00FF",
-        "#00FF00",
-        "#FF0000",
+        "#e63d4d",
+        "#f9b528",
+        "#ffef10",
+        "#44a84c",
+        "#2870ab",
+        "#4a3079",
+        "#9c3a83",
+        "#71422c",
         "#000000",
         "#FFFFFF"
         ],
@@ -40,11 +45,11 @@ class App extends Component {
 
     render() {
         const {penSize, colors, color} = this.state;
-        const colorSwatches = colors.map(color => {
-            let style = {"backgroundColor": color }
+        const colorSwatches = colors.map(swatch => {
+            let style = {"backgroundColor": swatch }
             let classNames = ['color-swatch'];
-            if (color == this.state.color) classNames.push("selected")
-            return <div style={style} className={classNames.join(' ')} key={color} onClick={() => { this.handleColorClick(color) }}></div>
+            if (color === swatch) classNames.push("selected")
+            return <div style={style} className={classNames.join(' ')} key={swatch} onClick={() => { this.handleColorClick(swatch) }}></div>
         });
         return (
             <div className="App">
