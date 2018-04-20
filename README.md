@@ -2,6 +2,15 @@
 
 Create sketches. I'll add functionality to the sketchpad project as I go.
 
+## Install
+
+`npm install`
+`npm build`
+
+## Run
+
+`npm start`
+
 # Planned Features
 
 * Save image
@@ -9,6 +18,7 @@ Create sketches. I'll add functionality to the sketchpad project as I go.
 * Load json
 * Export as large image
 * View saved sketches (Gallery)
+* Deploy to GH Pages
 
 ## Note
 

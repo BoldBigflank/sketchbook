@@ -6166,7 +6166,7 @@ signal-exit@^3.0.0, signal-exit@^3.0.2:
 
 "sketchpad@https://github.com/BoldBigflank/sketchpad":
   version "0.1.0"
-  resolved "https://github.com/BoldBigflank/sketchpad#1db27c0986d3c4726502297586d2db597e92a708"
+  resolved "https://github.com/BoldBigflank/sketchpad#e8c4b2244eca43bc40a963e206164e5f035c4a4a"
 
 slash@^1.0.0:
   version "1.0.0"

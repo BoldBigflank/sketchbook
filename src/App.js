@@ -43,6 +43,10 @@ class App extends Component {
         this.sketchpad.penSize = this.state.penSize;
     };
 
+    handleSaveClick = () => {
+        console.log(this.sketchpad.strokes);
+    }
+
     render() {
         const {penSize, colors, color} = this.state;
         const colorSwatches = colors.map(swatch => {
@@ -66,6 +70,7 @@ class App extends Component {
                     <button onClick={() => {this.sketchpad.undo()}}>undo</button>
                     <button onClick={() => {this.sketchpad.redo()}}>redo</button>
                     <button onClick={this.handlePenSizeClick}>Size {penSize}</button>
+                    <button onClick={this.handleSaveClick}>Save</button>
                 </div>
             </div>
         );
